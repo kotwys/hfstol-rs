@@ -1,0 +1,20 @@
+[package]
+name = "hfstol"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["lib"]
+
+[features]
+default = ["std"]
+std = ["nom/std"]
+
+[dependencies]
+array-init = "2.1.0"
+
+[dependencies.nom]
+version = "7"
+default-features = false
+features = ["alloc"]
