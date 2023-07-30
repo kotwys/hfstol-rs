@@ -19,7 +19,7 @@ trait.
 Examples below use [`analyser-gt-desc.hfstol`] analyser file for the Udmurt
 language.
 
-```no_run
+```rust
 let content = std::fs::read("./analyser-gt-desc.hfstol").unwrap();
 let t = hfstol::read_transducer(&content).unwrap();
 println!("{:?}", t.lookup("лэсьтӥськонъёс"));
